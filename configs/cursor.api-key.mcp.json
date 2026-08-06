@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "palim": {
+      "url": "https://api.usepalim.com/mcp",
+      "headers": {
+        "x-api-key": "YOUR_API_KEY"
+      }
+    }
+  }
+}

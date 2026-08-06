@@ -1,0 +1,13 @@
+{
+  "args": [
+    "mcp-remote",
+    "https://api.usepalim.com/mcp",
+    "--header",
+    "x-api-key:${PALIM_API_KEY}"
+  ],
+  "command": "npx",
+  "env": {
+    "PALIM_API_KEY": "YOUR_API_KEY"
+  },
+  "useBuiltInNode": true
+}
