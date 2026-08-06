@@ -1,0 +1,13 @@
+# Palim is a hosted remote MCP server. Smithery proxies https://api.usepalim.com/mcp
+# Config is optional: OAuth clients need no key; API-key clients set x-api-key.
+runtime: "typescript"
+startCommand:
+  type: "http"
+  configSchema:
+    type: object
+    properties:
+      apiKey:
+        type: string
+        title: "Palim API key"
+        description: "Optional. From https://api.usepalim.com/setup. OAuth clients can leave this empty."
+    required: []

@@ -101,6 +101,29 @@ You should get the tool overview. Then save a real session and retrieve it from 
 - Automatic sync without an explicit save (except documented extension/hooks)
 - ChatGPT Memory portability
 
+
+## Tools
+
+Palim exposes hosted memory tools over MCP (45+), including:
+
+| Tool | Purpose |
+|------|---------|
+| `palim_resume` | Continue the latest handoff |
+| `palim_save_context` | Lightweight checkpoint (default save) |
+| `palim_save_session` | Full transcript save/append |
+| `palim_search` / `palim_search_by_date_range` | Find past work |
+| `palim_add_memory` | Durable facts/preferences |
+| `palim_help` | Tool overview |
+
+Full list: connect and call `palim_help`, or see https://usepalim.com/en/docs/
+
+## Usage
+
+1. Connect with OAuth or `x-api-key`
+2. In a new chat, call `palim_resume` (or ask "Palim Help")
+3. After real work, checkpoint with `palim_save_context`
+4. Retrieve from another client with `palim_search`
+
 ## License
 
 MIT — configs only; Palim the service remains proprietary.
