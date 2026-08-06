@@ -68,7 +68,7 @@ Add a **custom connector** / remote MCP:
 
 ---
 
-## ChatGPT (Plus/Pro)
+## ChatGPT
 
 1. Settings → Apps → Advanced → enable **Developer Mode**
 2. Create app → URL `https://api.usepalim.com/mcp` → Auth: **OAuth**
@@ -77,7 +77,7 @@ Add a **custom connector** / remote MCP:
 
 ---
 
-## Perplexity (Mac App)
+## Perplexity
 
 API key from https://api.usepalim.com/setup. Settings → Connectors → Advanced → paste [`configs/perplexity.mcp.json`](configs/perplexity.mcp.json) and replace `YOUR_API_KEY`.
 
