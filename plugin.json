@@ -2,13 +2,23 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "palim",
   "version": "1.0.0",
-  "description": "Hosted MCP memory: save sessions and decisions once, search them from Cursor and other MCP clients. EU-hosted full-text search.",
+  "description": "Cross-tool AI memory over MCP. Checkpoint chats in Cursor, resume them in Claude or ChatGPT. EU-hosted full-text search \u2014 not another local SQLite sidecar.",
   "author": {
     "name": "Jan Ole Schmidt",
     "url": "https://usepalim.com"
   },
-  "homepage": "https://usepalim.com/en/docs/",
+  "homepage": "https://usepalim.com",
   "repository": "https://github.com/joleschmidt/palim-mcp-examples",
   "license": "MIT",
-  "keywords": ["mcp", "memory", "context", "hosted", "cross-llm", "palim"]
+  "keywords": [
+    "mcp",
+    "memory",
+    "context",
+    "hosted",
+    "cross-llm",
+    "cursor",
+    "claude",
+    "chatgpt",
+    "sessions"
+  ]
 }
