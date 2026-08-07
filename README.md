@@ -16,6 +16,15 @@ Palim stores sessions, decisions, and memories you **explicitly save**, then mak
 | Machine-readable | https://usepalim.com/llms.txt |
 | Site | https://usepalim.com |
 
+
+## Add to Cursor
+
+[![Add Palim MCP to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](cursor://anysphere.cursor-deeplink/mcp/install?name=palim&config=eyJ1cmwiOiJodHRwczovL2FwaS51c2VwYWxpbS5jb20vbWNwIn0=)
+
+One-click install (OAuth on first use). Or copy [`configs/cursor.mcp.json`](configs/cursor.mcp.json).
+
+This repo is also an [Agent Plugins](https://open-plugins.com) package (`plugin.json` + `mcp.json`) for [cursor.directory](https://cursor.directory).
+
 ### Intent pages
 
 - [Share context ChatGPT ↔ Claude](https://usepalim.com/en/use-cases/share-context-chatgpt-claude/)

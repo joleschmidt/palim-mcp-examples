@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "palim",
+  "version": "1.0.0",
+  "description": "Hosted MCP memory: save sessions and decisions once, search them from Cursor and other MCP clients. EU-hosted full-text search.",
+  "author": {
+    "name": "Jan Ole Schmidt",
+    "url": "https://usepalim.com"
+  },
+  "homepage": "https://usepalim.com/en/docs/",
+  "repository": "https://github.com/joleschmidt/palim-mcp-examples",
+  "license": "MIT",
+  "keywords": ["mcp", "memory", "context", "hosted", "cross-llm", "palim"]
+}
