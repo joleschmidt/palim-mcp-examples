@@ -2,9 +2,10 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "palim",
   "version": "1.0.0",
-  "description": "Cross-tool AI memory over MCP. Checkpoint chats in Cursor, resume them in Claude or ChatGPT. EU-hosted full-text search \u2014 not another local SQLite sidecar.",
+  "description": "Cross-tool AI memory over MCP. Checkpoint chats in Cursor, resume them in Claude or ChatGPT. EU-hosted full-text search — not another local SQLite sidecar.",
   "author": {
     "name": "Jan Ole Schmidt",
+    "email": "hello@usepalim.com",
     "url": "https://usepalim.com"
   },
   "homepage": "https://usepalim.com",
