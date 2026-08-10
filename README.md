@@ -21,9 +21,26 @@ Palim stores sessions, decisions, and memories you **explicitly save**, then mak
 
 [![Add Palim MCP to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](cursor://anysphere.cursor-deeplink/mcp/install?name=palim&config=eyJ1cmwiOiJodHRwczovL2FwaS51c2VwYWxpbS5jb20vbWNwIn0=)
 
-One-click install (OAuth on first use). Or copy [`configs/cursor.mcp.json`](configs/cursor.mcp.json).
+One-click MCP install (OAuth on first use). Or copy [`configs/cursor.mcp.json`](configs/cursor.mcp.json).
 
-This repo is also an [Agent Plugins](https://open-plugins.com) package (`plugin.json` + `mcp.json`) for [cursor.directory](https://cursor.directory).
+### Cursor Marketplace plugin
+
+This repository is the public Cursor plugin source:
+
+- Cursor Plugin manifest: [`.cursor-plugin/plugin.json`](.cursor-plugin/plugin.json)
+- Agent Plugins package: root [`plugin.json`](plugin.json) + [`mcp.json`](mcp.json)
+- Skill: [`skills/palim-memory/SKILL.md`](skills/palim-memory/SKILL.md)
+- Logo: [`assets/logo.svg`](assets/logo.svg)
+
+After marketplace review, install from **Customize → Plugins** / [cursor.com/marketplace](https://cursor.com/marketplace). Until then, use the deep link above or [cursor.directory/plugins/palim](https://cursor.directory/plugins/palim).
+
+Local test:
+
+```bash
+mkdir -p ~/.cursor/plugins/local
+ln -sfn "$(pwd)" ~/.cursor/plugins/local/palim
+# then Developer: Reload Window
+```
 
 ### Intent pages
 
