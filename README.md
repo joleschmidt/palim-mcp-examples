@@ -29,6 +29,7 @@ This repository is the public Cursor plugin source:
 
 - Cursor Plugin manifest: [`.cursor-plugin/plugin.json`](.cursor-plugin/plugin.json)
 - Agent Plugins package: root [`plugin.json`](plugin.json) + [`mcp.json`](mcp.json)
+- Grok Build / Open Plugins discovery: root [`.mcp.json`](.mcp.json) (same Palim streamable-http config as `mcp.json`)
 - Skill: [`skills/palim-memory/SKILL.md`](skills/palim-memory/SKILL.md)
 - Logo: [`assets/logo.svg`](assets/logo.svg)
 
