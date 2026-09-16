@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "palim": {
+      "type": "streamable-http",
+      "url": "https://api.usepalim.com/mcp"
+    }
+  }
+}
