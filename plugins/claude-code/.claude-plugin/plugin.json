@@ -1,0 +1,29 @@
+{
+  "name": "palim",
+  "description": "Carries your working context from one Claude Code session into the next \u2014 automatically, without asking you to summarise anything.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Jan Ole Schmidt",
+    "url": "https://usepalim.com"
+  },
+  "homepage": "https://usepalim.com/en/docs/",
+  "keywords": [
+    "memory",
+    "context",
+    "handoff",
+    "palim",
+    "mcp"
+  ],
+  "displayName": "Palim",
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "Palim API key",
+      "description": "Your key from https://api.usepalim.com/setup (starts with palim_)",
+      "required": true,
+      "sensitive": true
+    }
+  },
+  "repository": "https://github.com/joleschmidt/palim-mcp-examples",
+  "license": "MIT"
+}

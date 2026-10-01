@@ -1,0 +1,17 @@
+{
+  "name": "palim",
+  "owner": {
+    "name": "Jan Ole Schmidt",
+    "url": "https://usepalim.com"
+  },
+  "metadata": {
+    "description": "Palim for Claude Code: hosted MCP server plus session hooks"
+  },
+  "plugins": [
+    {
+      "name": "palim",
+      "source": "./plugins/claude-code",
+      "description": "Connects Palim to Claude Code and carries your last thread into the next session automatically."
+    }
+  ]
+}
