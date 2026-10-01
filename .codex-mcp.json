@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "palim": {
+      "type": "http",
+      "url": "https://api.usepalim.com/mcp",
+      "oauth_resource": "https://api.usepalim.com/mcp"
+    }
+  }
+}

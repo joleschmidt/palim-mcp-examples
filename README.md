@@ -17,6 +17,39 @@ Palim stores sessions, decisions, and memories you **explicitly save**, then mak
 | Site | https://usepalim.com |
 
 
+## Install in Codex / ChatGPT desktop
+
+This repository provides a custom plugin marketplace containing Palim's memory
+skill and hosted MCP connection.
+
+In the desktop app, open **Settings → Plugins → Add → Add plugin marketplace**:
+
+- **Source:** `joleschmidt/palim-mcp-examples`
+- **Git ref:** `main`
+- **Sparse paths:** leave empty; the plugin lives at the repository root.
+
+Open the Plugins Directory, select the **Palim** marketplace, and install Palim.
+If the new source does not appear immediately, reopen the directory or restart
+the desktop app. Connect your Palim account when prompted on first use and
+confirm that the displayed account is the one you intend to use.
+
+Alternatively, with the Codex CLI:
+
+```bash
+codex plugin marketplace add joleschmidt/palim-mcp-examples --ref main
+codex plugin add palim@palim
+```
+
+Try `Palim Help`, then ask Palim to save a small checkpoint and retrieve it.
+This is a custom repository marketplace. A public listing in OpenAI's universal
+Plugins Directory requires a separate submission and review.
+
+The catalog is [`.agents/plugins/marketplace.json`](.agents/plugins/marketplace.json).
+The portable plugin package uses root [`plugin.json`](plugin.json),
+[`mcp.json`](mcp.json), and [`skills/palim-memory/`](skills/palim-memory/).
+The Codex compatibility manifest is [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json);
+it uses [`.codex-mcp.json`](.codex-mcp.json) for the HTTP/OAuth connection.
+
 ## Add to Cursor
 
 [![Add Palim MCP to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](cursor://anysphere.cursor-deeplink/mcp/install?name=palim&config=eyJ1cmwiOiJodHRwczovL2FwaS51c2VwYWxpbS5jb20vbWNwIn0=)

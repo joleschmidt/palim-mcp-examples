@@ -1,0 +1,46 @@
+{
+  "name": "palim",
+  "version": "1.0.0",
+  "description": "Cross-tool AI memory powered by Palim's hosted MCP server.",
+  "author": {
+    "name": "Jan Ole Schmidt",
+    "email": "hello@usepalim.com",
+    "url": "https://www.usepalim.com"
+  },
+  "homepage": "https://www.usepalim.com/en/docs/",
+  "repository": "https://github.com/joleschmidt/palim-mcp-examples",
+  "license": "MIT",
+  "keywords": [
+    "memory",
+    "context",
+    "mcp",
+    "cross-tool",
+    "sessions",
+    "sync"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.codex-mcp.json",
+  "interface": {
+    "displayName": "Palim",
+    "shortDescription": "Cross-tool AI memory",
+    "longDescription": "Save useful AI work as checkpoints, retrieve prior sessions and durable memories, and continue with the same context across ChatGPT, Codex, Cursor, Claude, and other MCP clients. Palim is EU-hosted and uses full-text and exact-text search today.",
+    "developerName": "Jan Ole Schmidt",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://www.usepalim.com",
+    "privacyPolicyURL": "https://www.usepalim.com/en/privacy/",
+    "termsOfServiceURL": "https://www.usepalim.com/en/terms/",
+    "defaultPrompt": [
+      "Resume my latest work from Palim.",
+      "Search Palim for my architecture decisions.",
+      "Save this decision to Palim as a checkpoint."
+    ],
+    "brandColor": "#4F46E5",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "logoDark": "./assets/logo-dark.png"
+  }
+}
