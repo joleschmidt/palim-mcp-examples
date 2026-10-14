@@ -50,6 +50,31 @@ The portable plugin package uses root [`plugin.json`](plugin.json),
 The Codex compatibility manifest is [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json);
 it uses [`.codex-mcp.json`](.codex-mcp.json) for the HTTP/OAuth connection.
 
+## Install in Claude Code (plugin)
+
+The plugin adds the Palim connector, two skills (`/palim:handoff`, `/palim:status`) and
+three session hooks: it loads your last thread when a session starts, keeps your state
+current while you work, and saves a checkpoint before Claude Code compacts its context.
+
+```bash
+claude plugin marketplace add joleschmidt/palim-mcp-examples
+claude plugin install palim@palim
+```
+
+Then sign in to the connector: run `/mcp`, select `palim` and authenticate. Sign-in uses
+OAuth, so there is no key to copy.
+
+The hooks run outside the model and need their own credential. Create an API key at
+[api.usepalim.com/setup](https://api.usepalim.com/setup) and enter it when Claude Code asks
+for the plugin's options, or later under `/plugin` > Palim > Configure. Claude Code keeps it
+in secure storage. Without a key the hooks do nothing and the rest of the plugin still works.
+Run `/palim:status` to see whether everything is in place.
+
+Requires `python3` on your `PATH`. The hooks exit quietly on any error and never block a
+session. The plugin's source, and a full account of what it sends, is in
+[joleschmidt/palim-claude-plugin](https://github.com/joleschmidt/palim-claude-plugin); this
+repository holds the catalog, [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json).
+
 ## Add to Cursor
 
 [![Add Palim MCP to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](cursor://anysphere.cursor-deeplink/mcp/install?name=palim&config=eyJ1cmwiOiJodHRwczovL2FwaS51c2VwYWxpbS5jb20vbWNwIn0=)

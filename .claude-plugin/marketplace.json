@@ -1,0 +1,21 @@
+{
+  "name": "palim",
+  "owner": {
+    "name": "Jan Ole Schmidt",
+    "url": "https://usepalim.com"
+  },
+  "metadata": {
+    "description": "Palim for Claude Code: connector, handoff skills and session hooks"
+  },
+  "plugins": [
+    {
+      "name": "palim",
+      "source": {
+        "source": "github",
+        "repo": "joleschmidt/palim-claude-plugin"
+      },
+      "description": "Hands your working state to the next AI session: connector, handoff skills and session hooks that keep a checkpoint current.",
+      "homepage": "https://usepalim.com"
+    }
+  ]
+}
