@@ -5,7 +5,7 @@
     "url": "https://usepalim.com"
   },
   "metadata": {
-    "description": "Palim for Claude Code: connector, handoff skills and session hooks"
+    "description": "Palim for Claude Code: the plugin (connector and skills) and the session hooks"
   },
   "plugins": [
     {
@@ -14,7 +14,13 @@
         "source": "github",
         "repo": "joleschmidt/palim-claude-plugin"
       },
-      "description": "Hands your working state to the next AI session: connector, handoff skills and session hooks that keep a checkpoint current.",
+      "description": "Hands your working state to the next AI session: Palim connector plus handoff and status skills.",
+      "homepage": "https://usepalim.com"
+    },
+    {
+      "name": "palim-hooks",
+      "source": "./plugins/palim-hooks",
+      "description": "Session hooks for Claude Code: load the last thread at session start and keep a checkpoint current. Needs a Palim API key.",
       "homepage": "https://usepalim.com"
     }
   ]
