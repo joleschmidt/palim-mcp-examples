@@ -52,28 +52,22 @@ it uses [`.codex-mcp.json`](.codex-mcp.json) for the HTTP/OAuth connection.
 
 ## Install in Claude Code (plugin)
 
-The plugin adds the Palim connector, two skills (`/palim:handoff`, `/palim:status`) and
-three session hooks: it loads your last thread when a session starts, keeps your state
-current while you work, and saves a checkpoint before Claude Code compacts its context.
+Two plugins, from this marketplace:
 
 ```bash
 claude plugin marketplace add joleschmidt/palim-mcp-examples
 claude plugin install palim@palim
+claude plugin install palim-hooks@palim
 ```
 
-Then sign in to the connector: run `/mcp`, select `palim` and authenticate. Sign-in uses
-OAuth, so there is no key to copy.
-
-The hooks run outside the model and need their own credential. Create an API key at
-[api.usepalim.com/setup](https://api.usepalim.com/setup) and enter it when Claude Code asks
-for the plugin's options, or later under `/plugin` > Palim > Configure. Claude Code keeps it
-in secure storage. Without a key the hooks do nothing and the rest of the plugin still works.
-Run `/palim:status` to see whether everything is in place.
-
-Requires `python3` on your `PATH`. The hooks exit quietly on any error and never block a
-session. The plugin's source, and a full account of what it sends, is in
-[joleschmidt/palim-claude-plugin](https://github.com/joleschmidt/palim-claude-plugin); this
-repository holds the catalog, [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json).
+- `palim`: the Palim connector and the skills `/palim:handoff` and `/palim:status`. Source:
+  [joleschmidt/palim-claude-plugin](https://github.com/joleschmidt/palim-claude-plugin).
+  Sign in with `/mcp` > `palim`; it uses OAuth.
+- `palim-hooks` (optional): loads your last thread when a session starts, keeps a checkpoint
+  current while you work, and saves one before Claude Code compacts its context. It needs a
+  Palim API key from [api.usepalim.com/setup](https://api.usepalim.com/setup), which Claude
+  Code asks for when you enable it, and `python3` on your `PATH`. Details in
+  [`plugins/palim-hooks`](plugins/palim-hooks/).
 
 ## Add to Cursor
 
