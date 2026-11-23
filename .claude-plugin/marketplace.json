@@ -11,8 +11,8 @@
     {
       "name": "palim",
       "source": {
-        "source": "github",
-        "repo": "joleschmidt/palim-claude-plugin"
+        "source": "url",
+        "url": "https://github.com/joleschmidt/palim-claude-plugin.git"
       },
       "description": "Hands your working state to the next AI session: Palim connector plus handoff and status skills.",
       "homepage": "https://usepalim.com"
