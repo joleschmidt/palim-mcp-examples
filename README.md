@@ -4,7 +4,7 @@ Copy-paste configs to connect [Palim](https://usepalim.com) — a **hosted MCP m
 
 Palim stores sessions, decisions, and memories you **explicitly save**, then makes them searchable from every connected AI client.
 
-> Not a local SQLite sidecar. Hosted MCP endpoint. Search today: PostgreSQL full-text + text match (not vector/semantic embeddings).
+> Not a local SQLite sidecar. Hosted MCP endpoint. Search today: keyword search (not vector or semantic embeddings).
 
 ## Quick links
 
@@ -176,14 +176,14 @@ You should get the tool overview. Then save a real session and retrieve it from 
 
 ## What not to claim
 
-- Semantic / embedding search (not shipped)
+- No semantic or embedding search (not shipped)
 - Automatic sync without an explicit save (except documented extension/hooks)
 - ChatGPT Memory portability
 
 
 ## Tools
 
-Palim exposes hosted memory tools over MCP (45+), including:
+Palim's public tool list currently has eleven tools, including:
 
 | Tool | Purpose |
 |------|---------|

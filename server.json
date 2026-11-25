@@ -2,13 +2,22 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.joleschmidt/palim",
   "title": "Palim",
-  "description": "Hosted MCP memory: save sessions/decisions once, search from Claude, Cursor, ChatGPT. EU-hosted FTS.",
-  "websiteUrl": "https://usepalim.com",
+  "description": "Hosted MCP memory: save decisions once, keyword search from Claude, Cursor, ChatGPT. EU-hosted.",
   "repository": {
     "url": "https://github.com/joleschmidt/palim-mcp-examples",
     "source": "github"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "websiteUrl": "https://usepalim.com",
+  "icons": [
+    {
+      "src": "https://api.usepalim.com/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
   "remotes": [
     {
       "type": "streamable-http",
@@ -16,7 +25,7 @@
       "headers": [
         {
           "name": "x-api-key",
-          "description": "Palim API key from https://api.usepalim.com/setup (OAuth also supported in clients that use it)",
+          "description": "Optional. Sign in with OAuth first (Claude, Cursor, ChatGPT open it on connect). Clients without OAuth: API key from https://api.usepalim.com/setup",
           "isRequired": false,
           "isSecret": true
         }
